@@ -104,7 +104,6 @@ public class NewJFrame extends javax.swing.JFrame {
         try {
             jButton1.setEnabled(false);
             //從 combobox 抓出被選到的項目，存到變數裡
-            //String selectedItem=" ";
             String selectedItem=(String)jComboBox1.getSelectedItem();
             /////////////////////////////////////
             URL url = new URL(selectedItem);
@@ -133,7 +132,6 @@ public class NewJFrame extends javax.swing.JFrame {
                                     URL fileURL=tempFile.toURI().toURL();
                                     //利用 fileURL 將 image icon 加到 jLabel2
                                     ImageIcon icon =new ImageIcon(fileURL);
-             
                                     jLabel2.setIcon(icon);
                                     ////////////////////////////////////////
                                     jList1.updateUI();
